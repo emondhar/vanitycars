@@ -12617,7 +12617,7 @@ ul#flickr-sfeeds li a img {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  overflow: scroll;
+  overflow-y: scroll;
   width: 30em;
   opacity: 0;
   transform: scale(0.8);
@@ -12646,16 +12646,17 @@ ul#flickr-sfeeds li a img {
 
 .popup-card p {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .popup-card img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 #close-popup {
-  background-color: #007bff;
+  background-color: #ff983d;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -12665,5 +12666,5 @@ ul#flickr-sfeeds li a img {
 }
 
 #close-popup:hover {
-  background-color: #0056b3;
+  background-color: #ffbe85;
 }
