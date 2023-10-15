@@ -365,15 +365,15 @@ body {
   font-weight: normal !important;
 }
 ::-moz-selection {
-  background-color: #ffea00;
+  background-color: #ff983d;
   color: #4b4e53;
 }
 ::selection {
-  background-color: #ffea00;
+  background-color: #ff983d;
   color: #4b4e53;
 }
 ::-moz-selection {
-  background-color: #ffea00;
+  background-color: #ff983d;
   color: #4b4e53;
 }
 .relative {
