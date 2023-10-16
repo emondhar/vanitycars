@@ -12793,3 +12793,7 @@ ul#flickr-sfeeds li a img {
     bottom: 100%;
   }
 }
+.login-box iframe::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

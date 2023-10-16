@@ -967,6 +967,31 @@ function closePopup() {
 // Automatically open the popup when the page loads
 window.addEventListener("load", openPopup);
 
-closePopupButton.addEventListener("click", closePopup);
+
+
+
+function changeIframeStyle() {
+  // Get the iframe element
+  var iframe = document.getElementById('newsletters');
+
+  // Check if the iframe has loaded
+  if (iframe && iframe.contentDocument) {
+    console.log("iframe loaded");
+    // Access the contentDocument of the iframe
+    var iframeDocument = iframe.contentDocument;
+
+    // Find the element within the iframe using standard DOM methods
+    var elementInsideIframe = iframeDocument.getElementsByClassName('poweredWrapper');
+
+    if (elementInsideIframe) {
+      // Modify the style of the element
+      elementInsideIframe.style.display = 'none';
+    }
+  }
+}
+
+closePopupButton.addEventListener("click", changeIframeStyle);
+
+// document.getElementById('newsletters').addEventListener("load", changeIframeStyle);
 
 
